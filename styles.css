@@ -72,3 +72,123 @@ body {
     color: #ccffcc;
     font-size: 0.95rem;
 }
+
+.scanner-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 1rem;
+    color: #00ffee;
+}
+
+.scanner-section h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.scanner-terminal {
+    background-color: #0f0f0f;
+    border: 1px solid #00ffaa;
+    border-radius: 8px;
+    padding: 1.5rem;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ccffcc;
+    font-size: 1rem;
+    white-space: pre-wrap;
+}
+
+.why-memes-section {
+    width: 90%;
+    max-width: 1000px;
+    margin: 4rem auto;
+    padding: 2rem;
+    background-color: #111;
+    border-left: 5px solid #00ffaa;
+    color: #ccffcc;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+}
+
+.why-memes-section h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #00ffee;
+}
+
+.why-memes-section p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.footer-section {
+    width: 100%;
+    padding: 2rem;
+    background-color: #0a0a0a;
+    color: #888;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+    border-top: 1px solid #333;
+}
+
+.footer-section h2 {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #00ffaa;
+}
+
+.footer-section .shitoshi {
+    margin-top: 1rem;
+    font-style: italic;
+    color: #00ff99;
+}
+
+.index-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    border: 2px solid #00ff99;
+    color: #00ff99;
+    background-color: transparent;
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+.index-button:hover {
+    background-color: #00ff99;
+    color: #0a0a0a;
+    box-shadow: 0 0 15px #00ff99;
+}
+
+.ascii-ticker {
+    width: 100%;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 2rem;
+    animation: scrollTicker 10s linear infinite;
+}
+
+@keyframes scrollTicker {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Mobile responsive tweaks */
+@media screen and (max-width: 768px) {
+    .terminal, .lore-section, .meme-grid-section, .scanner-section, .why-memes-section {
+        width: 95%;
+        font-size: 0.9rem;
+    }
+
+    .meme-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .index-button {
+        font-size: 0.9rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
